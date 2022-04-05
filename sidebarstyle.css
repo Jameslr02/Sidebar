@@ -1,0 +1,94 @@
+/*This is the CSS markup for the sidebar Vue component*/
+.sidenavcontainer
+{
+    background-color: #0d0d0d;
+    display: flex;
+    align-items: stretch;
+    min-width: 14vw;
+    max-width: 14.5vw;
+
+    }
+
+#sidenav{
+      min-height: 100vh;
+    min-width: 14.5vw;
+    max-width: 14.5vw;
+    padding-top: 1vh;
+}
+.sidenavlink{
+    color: #a3a3a3;
+    overflow:hidden;
+  
+}
+.sidebardemo{
+    margin: 0;
+}
+.iconbutton
+{
+    background-color: #0d0d0d;
+    width: 26px;
+    border-radius: 3px;
+    border: #0d0d0d 1px solid;
+    padding: 1px;
+    margin-left: 2vw;
+    display: inline;
+    margin-bottom: .5vh;
+    
+}
+.iconbutton:hover{
+    border: #404040 1px solid;
+    background-color: #D4D4D4;
+}
+.iconbutton:hover #hamburgericon{
+    stroke: #404040;
+    fill: #D4D4D4;
+}
+.navcontainer{
+    width: 14vw;
+    height: 5vh;
+    padding-top: 1px;
+    padding-right: 1px;
+    border: 1px;
+    border-radius:1px;
+    display: flex;
+    padding-left:3px;
+ 
+    
+
+}
+.sidebtntext {
+    font-size: 1vw;
+    height: 3vh;
+    width: 10vw;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    margin-left:2vw;
+    margin-top: 1vh;
+}
+.navcontainer:hover {
+    background: #D4D4D4;
+    cursor:pointer;
+}
+
+
+.navcontainer:hover .sidebtntext{
+    color: #404040;
+    font-weight:bold;
+}
+
+.sidenavlink:hover {
+    color: #404040;
+    font-weight: bold;
+    text-decoration-style: wavy;
+
+
+}
+.sidenavlink:hover .ddsideicon{
+    fill: #d4d4d4;
+    stroke: #404040;
+}
+.ddsideicon{
+    width: 22px;
+    stroke-width: 1.25px;
+    stroke: #a3a3a3;
+}
