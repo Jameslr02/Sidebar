@@ -92,31 +92,39 @@
             let togglebool = false;
             function togglesidemenu() {
                 togglebool = !togglebool;
+                let sidenav = document.getElementById('sidenav');
+                let navcontainerelems = document.getElementsByClassName('navcontainer');
+                let logoimg = document.getElementById('sidebarlogoimg');
+                let hamburgericon = document.getElementsByClassName('iconbutton');
+                let logo = document.getElementById('sidebarlogo');
+                let sidebarnav = document.getElementsByClassName('sidenavcontainer');
                 if (togglebool)
                 {
                     console.log(togglebool);
-                let navcontainerelems = document.getElementsByClassName('navcontainer');
-                let logo = document.getElementById('sidebarlogoimg');
-                let hamburgericon = document.getElementsByClassName('iconbutton');
-                for (var i = 0; i < navcontainerelems.length; i++)
-                {
-                    console.log(i);
-                    navcontainerelems.style
-                }
-                logo.style.width = "0%";
-                hamburgericon.style.marginLeft = "0px";
-                hamburgericon.style.marginRight = "78%";
-               
-                
+                    for (var i = 0; i < navcontainerelems.length; i++)
+                    {
+                         console.log(i);
+                         navcontainerelems.style
+                    }
+                logo.style.display = "none";
+                logoimg.style.width = "0%";
+                hamburgericon[0].style.marginLeft = "0%";
+                hamburgericon[0].style.marginRight = "98%";
+                sidebarnav[0].style.width = "3vw";
+                sidenav.style.overflow = "hidden";
                 console.log('clicked');
+
                 }
                 else if(!togglebool)
-                {
-                    let logo = document.getElementById('sidebarlogoimg');
-                    logo.style.width = "auto";
+                { 
+                    logoimg.style.width = "auto";
+                    logo.style.display = "revert";
+                    hamburgericon[0].style.marginLeft = ".05vw";
+                    hamburgericon[0].style.marginRight = "0%";
+                    sidebarnav[0].style.width = "14.5vw";
                 }
-                hamburgericon.style.marginLeft = "2vw";
-                hamburgericon.style.marginRight = "0px";
+               
+
             }
         </script>
 </body>
