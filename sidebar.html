@@ -100,15 +100,19 @@
                 let sidebarnav = document.getElementsByClassName('sidenavcontainer');
                 if (togglebool)
                 {
-                    console.log(togglebool);
-                    for (var i = 0; i < navcontainerelems.length; i++)
-                    {
-                         console.log(i);
-                         navcontainerelems.style
-                    }
+                    // console.log(togglebool);
+                    // for (var i = 0; i < navcontainerelems.length; i++)
+                    // {
+                    //      console.log(i);
+                    //      navcontainerelems.style
+                    // }
                 logo.style.display = "none";
                 logoimg.style.width = "0%";
-                hamburgericon[0].style.marginLeft = "0%";
+                logo.style.opacity = "0";
+                logo.style.visibility = "hidden";
+                logoimg.style.opacity = "0";
+                logoimg.style.visibility = "hidden";
+                hamburgericon[0].style.marginLeft = ".25vw";
                 hamburgericon[0].style.marginRight = "98%";
                 sidebarnav[0].style.width = "3vw";
                 sidenav.style.overflow = "hidden";
@@ -118,7 +122,17 @@
                 else if(!togglebool)
                 { 
                     logoimg.style.width = "auto";
-                    logo.style.display = "revert";
+                    setTimeout(function(){
+                        logo.style.display = "revert";
+                            },1000);
+                    setTimeout(function(){
+                        logo.style.opacity = "1";
+                    logo.style.visibility = "visible";
+                    logoimg.style.opacity = "1";
+                    logoimg.style.visibility = "visible";
+                            },1300);
+                    
+                   
                     hamburgericon[0].style.marginLeft = ".05vw";
                     hamburgericon[0].style.marginRight = "0%";
                     sidebarnav[0].style.width = "14.5vw";
