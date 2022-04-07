@@ -8,16 +8,12 @@
     stroke-width: 1.25px;
     stroke: #a3a3a3;
     margin-left:auto;
-    
-
 }
-
 #sidebarlogo {
     background-color:#0d0d0d; 
-    margin-left:1.5vw; 
+    margin-left: .25vw; 
     margin-top: 1vh;
     transition: visibility 1s, opacity 1s linear;
-    
 }
 #sidebarimglogo{
     width:100%; 
@@ -26,7 +22,6 @@
     min-height: 3%;
     margin-top: 1.5vh;
     transition: visibility 1s, opacity 1, linear;
-    
 }
 #sidenav{
       min-height: 100vh;
@@ -35,17 +30,26 @@
     padding-top: 1vh;
     overflow: hidden;
 }
-#createnewuserli{
-    margin-top: 2.5vh;
-}
+
 #createusersvg{
     margin-top:1.25vh; 
-    margin-left: .5vw;
+    
 }
 #filemanagerli{
      width: 25px;
     margin-top:1vh; 
     /* margin-left: .25vw; */
+}
+.xiconbullet{
+    width: 1.5vw;
+    height: 1.5vw;
+    margin-top: .75vh;
+}
+.xiconbullet2{
+    width: 1.5vw;
+    height: 1.5vw;
+    margin-top: .75vh;
+    display: none;
 }
 .sidenavlink{
     color: #a3a3a3;
@@ -69,7 +73,6 @@
     transition: margin-right 1s ease-in-out;
     
 }
-
 .iconbutton:hover{
     border: #404040 1px solid;
     background-color: #D4D4D4;
@@ -94,7 +97,7 @@
     min-width: 1vw;
     max-width: 14.5vw;
     transition: width 1s;
-
+    box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.06), 0px 20px 25px -5px rgba(0, 0, 0, 0.1);
     }
 .navcontainer{
     width: 14vw;
@@ -105,9 +108,32 @@
     border-radius:1px;
     display: flex;
     padding-left:3px;
- 
-    
-
+}
+.subnavcontainer {
+    width: 13.9vw;
+    height: 5vh;
+    padding-top: 1px;
+    padding-right: 1px;
+    border: 1px;
+    border-radius:1px;
+    display: flex;
+    padding-left:3px;
+    border-radius: 6px;
+    border:#D4D4D4 1px transparent;
+    border-bottom: #a3a3a3 1px solid;
+    margin-bottom: 1px;
+}
+.subnavcontainer:hover {
+    background-color: #E2E8F0;
+}
+.subnavcontainer:hover .submenutext{
+    color: #404040;
+}
+.subnavcontainer:hover .xiconbullet {
+    display: none;
+}
+.subnavcontainer:hover .xiconbullet2 {
+    display: block;
 }
 .sidebtntext {
     font-size: 1vw;
@@ -118,23 +144,48 @@
     margin-left:2vw;
     margin-top: 1.5vh;
 }
+.submenutext{
+    font-weight: bold;
+    font-size: smaller;
+    height: 3vh;
+    width: 10vw;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    margin-left:2vw;
+    margin-top: 1.5vh;
+    color: #a3a3a3;
+
+}
+.submenuicon{
+    width: 22px;
+    stroke-width: 1.25px;
+    stroke: #a3a3a3;
+    margin-left: 5px;
+}
+.submenu{
+    position: absolute; 
+    display: none; 
+    padding-left: .1vw; 
+    background-color: #0d0d0d;
+    border: #404040 1px solid;
+    border-radius: 7px;
+    overflow: auto;
+    margin-left: 0;
+    padding-right: 0;
+
+}
 .navcontainer:hover {
     background: #D4D4D4;
     cursor:pointer;
 }
-
-
 .navcontainer:hover .sidebtntext{
     color: #404040;
     font-weight:bold;
 }
-
 .sidenavlink:hover {
     color: #404040;
     font-weight: bold;
     text-decoration-style: wavy;
-
-
 }
 .sidenavlink:hover .ddsideicon{
     fill: #d4d4d4;
