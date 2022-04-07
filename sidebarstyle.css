@@ -8,16 +8,16 @@
     stroke-width: 1.25px;
     stroke: #a3a3a3;
     margin-left:auto;
+    
 
 }
-#dashboardlink{
-    margin-top:3vh;
-}
+
 #sidebarlogo {
     background-color:#0d0d0d; 
     margin-left:1.5vw; 
     margin-top: 1vh;
     transition: visibility 1s, opacity 1s linear;
+    
 }
 #sidebarimglogo{
     width:100%; 
@@ -25,7 +25,8 @@
     max-width:55%; 
     min-height: 3%;
     margin-top: 1.5vh;
-    transition: visibility 1s, opacity 1s linear;
+    transition: visibility 1s, opacity 1, linear;
+    
 }
 #sidenav{
       min-height: 100vh;
@@ -35,16 +36,16 @@
     overflow: hidden;
 }
 #createnewuserli{
-    margin-top: 5vh;
+    margin-top: 2.5vh;
 }
 #createusersvg{
     margin-top:1.25vh; 
     margin-left: .5vw;
 }
 #filemanagerli{
-     width: 27px;
+     width: 25px;
     margin-top:1vh; 
-    margin-left: .25vw;
+    /* margin-left: .25vw; */
 }
 .sidenavlink{
     color: #a3a3a3;
@@ -64,6 +65,8 @@
     margin-left: .25vw;
     display: inline;
     margin-bottom: .5vh;
+    transition: margin-left 1s ease-in-out;
+    transition: margin-right 1s ease-in-out;
     
 }
 
@@ -90,7 +93,7 @@
     width: 14.5vw;
     min-width: 1vw;
     max-width: 14.5vw;
-    transition: width .75s;
+    transition: width 1s;
 
     }
 .navcontainer{
