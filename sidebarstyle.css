@@ -141,7 +141,7 @@
     width: 10vw;
     text-align: left;
     font-family: 'Inter', sans-serif;
-    margin-left:2vw;
+    margin-left: 2vw;
     margin-top: 1.5vh;
 }
 .submenutext{
@@ -154,7 +154,11 @@
     margin-left:2vw;
     margin-top: 1.5vh;
     color: #a3a3a3;
-
+}
+.sidearrowicon {
+    stroke: #a3a3a3;
+    width: 5px;
+    transition: opacity 1s;
 }
 .submenuicon{
     width: 22px;
@@ -166,13 +170,12 @@
     position: absolute; 
     display: none; 
     padding-left: .1vw; 
-    background-color: #0d0d0d;
+    background-color: rgb(13,13,13);
     border: #404040 1px solid;
     border-radius: 7px;
     overflow: auto;
     margin-left: 0;
     padding-right: 0;
-
 }
 .navcontainer:hover {
     background: #D4D4D4;
